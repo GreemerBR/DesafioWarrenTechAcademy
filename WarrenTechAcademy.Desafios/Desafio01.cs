@@ -10,6 +10,7 @@ namespace WarrenTechAcademy.Desafios
     {
         public void Executar()
         {
+            Console.Clear();
             Console.WriteLine("Processando...");
             int contador = 0;
             string texto = "";
@@ -41,6 +42,11 @@ namespace WarrenTechAcademy.Desafios
             }
             Console.Clear();
             Console.WriteLine(texto + "\n\nOs " + contador + " números acima são todos aqueles cuja sua soma com seu reverso resultem em números ímpares que estão abaixo de 1 milhão.");
+            Console.WriteLine(@"
+
+
+
+");
         }
     }
 }

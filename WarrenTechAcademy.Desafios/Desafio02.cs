@@ -10,35 +10,52 @@ namespace WarrenTechAcademy.Desafios
     {
         public void Executar()
         {
-
+            Console.Clear();
             Console.Write(@"Olá professor!
-Informe qual o limite de alunos para que a aula não seja cancelada: ");
-            int minimo = Convert.ToInt32(Console.ReadLine());
+Informe quantos alunos há em sua turma: ");
+            int totalAlunos = Convert.ToInt32(Console.ReadLine());
 
-            int noHorario = 0;
-            string aviso = "Aula normal";
-
-            while (noHorario < minimo)
-            {
-                Console.Clear();
-                Console.WriteLine("Informe quantos minutos o aluno chegou adiantado ou atrasado (utilize números negativos para chegadas adiantadas): ");
-                int tempoChegada = Convert.ToInt32(Console.ReadLine());
-
-                if (tempoChegada > 0)
-                {
-                    aviso = "Aula cancelada";
-                    atrasados++;
-                }
-                else
-                {
-                    Console.Clear();
-                    Console.WriteLine(aviso);
-                }
-            }
+            Console.WriteLine();
+            Console.Write("Agora informe qual a quantidade mínima de alunos para que a aula não seja cancelada: ");
+            int alunosMinimos = Convert.ToInt32(Console.ReadLine());
 
             Console.Clear();
-            Console.WriteLine(aviso);
+            Console.WriteLine("Informe quantos minutos o aluno chegou adiantado ou atrasado \n(utilize números negativos para chegadas adiantadas):");
 
+            int noHorario = 0;
+            int indice = 0;
+            while (indice < totalAlunos)
+            {
+                Console.Write("");
+                int tempoChegada = Convert.ToInt32(Console.ReadLine());
+
+                if (tempoChegada <= 0)
+                {
+                    noHorario++;
+                }
+
+                indice++;
+            }
+
+            if (noHorario >= alunosMinimos)
+            {
+                Console.Clear();
+                Console.WriteLine(@"Aula normal.
+
+
+
+");
+            }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine(@"Aula cancelada.
+
+
+
+");
+
+            }
         }
     }
 }

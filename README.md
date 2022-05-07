@@ -48,13 +48,13 @@ Para a execução dos algoritmos você pode optar por duas formas:
   
 * Abra o <b>Visual Studio 2022</b>;
 * Clone este repositório por meio do link `https://github.com/GreemerBR/DesafioWarrenTechAcademy.git`;
-* Após a cloonagem do repositório terminar clique em `View` e após em `Solution Explorer`;
+* Após a clonagem do repositório terminar, clique em `View` e após em `Solution Explorer`;
 * Na janela que se abriu de um duplo clique em `WarrenTechAcademy.sln`;
 * Por fim clique em `F5` e o algoritmo será executado.
     
 **Por meio do Prompt de Comando** 
   
-* Clique na opção `CODE` localizada na parte superior desta página para fazer o download do arquivo `DesafioWarrenTechAcademy-main.zip`;
+* Faça o download do arquivo [DesafioWarrenTechAcademy-main.zip](https://github.com/GreemerBR/DesafioWarrenTechAcademy/archive/refs/heads/main.zip);
 * Descompacte o arquivo `DesafioWarrenTechAcademy-main.zip` localmente;
 * Entre na pasta que foi descompactada e abra um terminal. Em seguinda digite:
 
@@ -92,7 +92,7 @@ Olá, selecione o item desejado
 
 * O usuário deve então informar um dos quatro valores `1`, `2`, `3` ou `4` conforme opção desejada;
 * Caso informe qualquer valor diferente dos acima citados o menu continuará a ser apresentado ao usuário até que uma opção válida seja informada;
-* Da mesma forma, após a finalização dos `Desafios 01`, `02` ou `03` o menu voltará a ser apresentado ao usuário, sendo necessário informar a opção `4` para que o algoritmo seja finalizado.
+* Da mesma forma, após a finalização dos `Desafio 01`, `Desafio 02` ou `Desafio 03` o menu voltará a ser apresentado ao usuário, sendo necessário informar a opção `4` para que o algoritmo seja finalizado.
   
 
 ### Questão 1

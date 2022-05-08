@@ -6,9 +6,9 @@
  <a href="#instalação">Instalação</a> • 
  <a href="#execução">Execução</a> •  
  <a href="#documentação-do-sistema">Documentação</a> •
- <a href="#questão-1">Questão 1</a> •
- <a href="#questão-2">Questão 2</a> •
- <a href="#questão-3">Questão 3</a> •
+ <a href="#desafio-01">Desafio 01</a> •
+ <a href="#desafio-02">Desafio 02</a> •
+ <a href="#desafio-03">Desafio 03</a> •
  <a href="#autor">Autor</a>
 </p>
 
@@ -91,65 +91,161 @@ Olá, selecione o item desejado
 ```
 
 * O usuário deve então informar um dos quatro valores `1`, `2`, `3` ou `4` conforme opção desejada;
+ 
 * Caso informe qualquer valor diferente dos acima citados o menu continuará a ser apresentado ao usuário até que uma opção válida seja informada;
+ 
 * Da mesma forma, após a finalização dos `Desafio 01`, `Desafio 02` ou `Desafio 03` o menu voltará a ser apresentado ao usuário, sendo necessário informar a opção `4` para que o algoritmo seja finalizado.
   
 
-### Questão 1
+### Desafio 01
  
 Alguns números inteiros positivos n possuem uma propriedade na qual a soma de n + reverso(n) resultam em números ímpares. Por exemplo, 36 + 63 = 99 e 409 + 904 = 1313. Considere que n ou reverso(n) não podem começar com 0.
 
 Existem 120 números reversíveis abaixo de 1000.
 
 Construa um algoritmo que mostre na tela todos os números n onde a soma de n + reverso(n) resultem em números ímpares que estão abaixo de 1 milhão.
+ 
+ ***Utilizando o algoritmo***
+ 
+ * Ao informar o valor `1` no Menu o usuário será direcionado para resolução do `Desafio 01`;
+ 
+ * Ele não precisará fazer mais nada além de esperar enquanto o algoritmo processa o desafio, enquanto espera na tela aparecera a seguinte mensagem:
+ 
+ ```
+ Processando...
+ ```
+ 
+ * Até que a mensagem final é apresentada ao usuário.
 
   
-### Questão 2
+### Desafio 02
 
 Um professor de programação, frustrado com a falta de disciplina de seus alunos, decidi cancelar a aula se menos de x alunos estiverem presentes quando a aula for iniciada. O tempo de chegada varia entre:
-
-* Normal: tempoChegada <= 0
-* Atraso: tempoChegada > 0
+ 
+Normal: tempoChegada <= 0
+Atraso: tempoChegada > 0
   
 Construa um algoritmo que dado o tempo de chegada de cada aluno e o limite x de alunos presentes, determina se a classe vai ser cancelada ou não ("Aula cancelada” ou “Aula normal”).
 
 **Exemplo:**
 
-* Entrada de dados:
+Entrada de dados:
   
-    x = 3  
-    tempoChegada = [-2, -1, 0, 1, 2]
+x = 3  
+tempoChegada = [-2, -1, 0, 1, 2]
 
-* Saída de dados:
+Saída de dados:
   
-    Aula normal.
+Aula normal.
 
-* Explicação:
+Explicação:
   
-    Os três primeiros alunos chegaram no horário. Os dois últimos estavam atrasados. O limite é de três alunos, portanto a aula não será cancelada.
-
+Os três primeiros alunos chegaram no horário. Os dois últimos estavam atrasados. O limite é de três alunos, portanto a aula não será cancelada.
+ 
+ ***Utilizando o algoritmo***
   
-### Questão 3
+ * Ao informar o valor `2` no Menu o usuário será direcionado para resolução do `Desafio 02`; 
+ 
+ * Na tela irá aparecer a seguinte mensagem:
+ 
+ ```
+ Olá professor!
+Informe quantos alunos há em sua turma:
+ ```
+ 
+ * O usuário deve então informar um número intiro positivo e apertar enter;
+ 
+ * Após isso a seguinte mensagem irá aparecer:
+ 
+ ```
+ Agora informe qual a quantidade mínima de alunos para que a aula não seja cancelada:
+ ```
+ 
+ * Novamente o usuário deve informar um número intiro positivo e apertar enter;
+ 
+ * Irá então aparecer a seguinte mensagem:
+ 
+ ```
+ Informe quantos minutos o aluno chegou adiantado ou atrasado
+(utilize números negativos para chegadas adiantadas):
+ ```
+ 
+ * Desta vez o usuário deve informar os minutos que cada aluno chegou atrasado ou adiantado, utilizando números inteiros positivo ou negativos;
+ 
+ * Uma vez informado um valor o usuário deve apertar a tecla enter antes de informar o próximo valor;
+ 
+ * O algorito interromperá automaticamente a solitação de chegada adiantada/atrasada após a quantidade de horários informados ser igual ao número de alunos totais inicialmente informado pelo usuário;
+ 
+ * Por fim, o algoritmo mostrará umas das duas opções de resposta possíveis:
+ 
+ ```
+ Aula normal.
+ ```
+ 
+ ```
+ Aula cancelada.
+ ```
+ 
+ 
+### Desafio 03
 
 Dado um vetor de números e um número n. Determine a soma com o menor número de elementos entre os números do vetor mais próxima de n e também mostre os elementos que compõem a soma. Para criar a soma, utilize qualquer elemento do vetor uma ou mais vezes.
 
 **Exemplo:**
 
-* Entrada de dados:
+Entrada de dados:
 
-    N = 10  
-    V = [2, 3, 4]
+N = 10  
+V = [2, 3, 4]
 
-* Saída de dados:
+Saída de dados:
 
-    10  
-    [2, 4, 4]  
-    [3, 3, 4]
+10  
+[2, 4, 4]  
+[3, 3, 4]
 
-* Explicação:
+Explicação:
 
-    Se N = 10 e V = [2, 3, 4] você pode utilizar as seguintes soma: [2, 2, 2, 2, 2], [2, 2, 3, 3], [2, 4, 4] ou [3, 3, 4]. Como a quantidade de elementos em [2, 4, 4] e [3, 3, 4] é igual, os dois conjuntos devem ser mostrados.
+Se N = 10 e V = [2, 3, 4] você pode utilizar as seguintes soma: [2, 2, 2, 2, 2], [2, 2, 3, 3], [2, 4, 4] ou [3, 3, 4]. Como a quantidade de elementos em [2, 4, 4] e [3, 3, 4] é igual, os dois conjuntos devem ser mostrados.
 
+ ***Utilizando o algoritmo***
+  
+ * Ao informar o valor `3` no Menu o usuário será direcionado para resolução do `Desafio 03`; 
+ 
+ * Na tela irá aparecer a seguinte mensagem:
+ 
+ ```
+ Informe o número desejado:
+ ```
+ 
+ * O usuário deve então informar um número intiro positivo e apertar enter;
+ 
+ * Após isso a seguinte mensagem irá aparecer:
+ 
+ ```
+ Insira os números pertencentes ao vetor.
+ ``` 
+ 
+ * Desta vez o usuário deve informar os os três números inteiros que irão compor o vetor;
+ 
+ * Uma vez informado um valor o usuário deve apertar a tecla enter antes de informar o próximo valor;
+ 
+ * O algorito interromperá automaticamente a solitação componentes do vetor após o usuário informar três números;
+ 
+ * Por fim, o algoritmo mostrará o número informado inicialmente, seguido pelos vetores contendo as menores combinações possíveis que chegam no número informado. Conforme exemplo abaixo
+ 
+ ```
+10  
+[2, 4, 4]  
+[3, 3, 4]
+ ```
+ * Caso apenas o número informado apareça, conforme exemplo abaixo, isso significa não ter sido possível chegar a uma solução com os valores que o usuário inseriu no vetor.
+```
+10  
+ 
+
+ ```
+ 
   
 ## Autor
 
